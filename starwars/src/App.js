@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import "./App.css";
-import Characters from "./components/StarWarsCharacters";
+import Page from "./components/StarWarsPage";
 
 export default class App extends Component {
   render() {
     return (
       <div>
-        <Characters />
+        <Page />
       </div>
     );
   }

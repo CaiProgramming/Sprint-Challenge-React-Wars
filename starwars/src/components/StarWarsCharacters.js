@@ -5,14 +5,21 @@ import CharacterList from "./ListCharacters";
 
 export default class StarWarsChars extends Component {
   state = {
+    currentPage: "",
     starwarsCharsList: []
   };
+  componentDidUpdate = () => {
+    if (this.state.currentPage !== this.props.Page) {
+      this.getCharacters(this.props.Page);
+    }
+  };
 
-  componentDidMount = () => {
-    this.getCharacters(`https://swapi.co/api/people/`);
+  updateCharacterState = () => {
+    this.setState({ starwarsCharsList: [], currentPage: this.props.Page });
   };
 
   getCharacters = URL => {
+    this.updateCharacterState();
     axios.get(URL).then(res => {
       const starwarsCharsList = res.data.results;
       this.setState({ starwarsCharsList });
