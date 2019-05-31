@@ -28,8 +28,7 @@ export default class StarWarsChars extends Component {
 
   render() {
     return (
-      <div className="App">
-        <h1 className="Header">React Wars</h1>
+      <div>
         <CharacterList List={this.state.starwarsCharsList} />
       </div>
     );

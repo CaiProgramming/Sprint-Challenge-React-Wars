@@ -44,8 +44,17 @@ export default class StarWarsPage extends React.Component {
   render() {
     return (
       <div>
-        <button onClick={this.buttonPrevHandler}>previous</button>
-        <button onClick={this.buttonNextHandler}>next</button>
+        <div className="Header">
+          <h1 className="HeaderText">React Wars</h1>
+          <div>
+            <button className="Btn" onClick={this.buttonPrevHandler}>
+              previous
+            </button>
+            <button className="Btn" onClick={this.buttonNextHandler}>
+              next
+            </button>
+          </div>
+        </div>
         <Characters Page={this.state.page} />
       </div>
     );
