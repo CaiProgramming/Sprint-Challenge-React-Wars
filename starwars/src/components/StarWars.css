@@ -1,0 +1,29 @@
+.CharacterCard{
+  display:flex;
+  flex-wrap: wrap;
+  width: 250px;
+  height: 350px;
+  margin: 50px;
+  padding: 10px;
+  background-color: #e5e5e5;
+  border: 1px #cccccc solid;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.CharacterCardList{
+  display: flex;
+  margin: auto;
+  width: 1200px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+li{
+  width: 100px;
+  text-decoration: none;
+  list-style: none;
+}
+.Name{
+  display: block;
+  width: 225px;
+}
