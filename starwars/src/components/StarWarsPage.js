@@ -46,7 +46,7 @@ export default class StarWarsPage extends React.Component {
       <div>
         <div className="Header">
           <h1 className="HeaderText">React Wars</h1>
-          <div>
+          <div className="Btns">
             <button className="Btn" onClick={this.buttonPrevHandler}>
               previous
             </button>
